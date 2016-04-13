@@ -19,3 +19,31 @@ Domains and routes can get confusing sometimes, so be sure to understand this pa
 # Services
 
 Ah. Everything is a service in a way so it gets confusing here too. Think of a service as any third party software that you can link your app instance to and use. Someone else wrote it (usually) and you just link to it from the marketplace. That’s all you need to care about.
+
+# Service Broker
+A component of a service which implements the service broker API.
+
+```
+Glossary
+
+| Term          | Definition   |
+| ------------- | ------------ |
+| API           | Application Programming Interface |
+| Availability Zone (AZ)	| A functionally independent segment of network infrastructure, often correlated with geographical region, designated to increase availability and fault-tolerance. A cloud operator can select or assign AZs on platforms such as AWS and vSphere. |
+| BOSH          | BOSH is an open framework for managing the full development and deployment life cycle of large-scale distributed software applications. |
+| CLI           | Command Line Interface |
+| DEA           | Droplet Execution Agent. The DEA is the component in <%=vars.product_short%> responsible for staging and hosting applications. |
+| Domains       | A domain is a domain name like `<%=vars.app_domain%>`. Domains can also be multi-level and contain sub-domains like the "myapp" in `myapp.<%=vars.app_domain%>`. Domain objects belong to an org and are not directly bound to apps. |
+| Droplet       | An archive within <%=vars.product_short%> that contains the application ready to run on a DEA. A droplet is the result of the application staging process. |
+| Managed Services | Services provided by third-parties, but integrated into Cloud Foundry via APIs so that Cloud Foundry users can provision reserved resources and credentials on demand. Also called **Custom Services**. |
+| Management    | You can manage spaces and orgs with the cf command line interface, the Cloud Controller API, and the Cloud Foundry Eclipse Plugin. |
+| Ops Manager or Operations Manager	| Operations Manager is a web application that you use to deploy and manage a Pivotal Cloud Foundry&reg; PaaS. |
+| Org | An org is the top-most meta object within the <%=vars.product_short%> infrastructure. Only an account with administrative privileges on a <%=vars.product_short%> instance can manage its orgs. |
+| Routes        | A route, based on a domain with an optional host as a prefix, may be associated with one or more applications. For example, `myapp` is the host and `<%=vars.app_domain%>` is the domain when using the route `myapp.<%=vars.app_domain%>`. It is possible to have a route that represents `<%=vars.app_domain%>` without a host. Routes are children of domains and are directly bound to apps. |
+| Service       | A "factory" which produces service instances. |
+| Service Instance | A reserved resource provisioned by a service. The resource provisioned will differ by service; could be a database or an account on a multi-tenant application. |
+| Spaces        | An org can contain multiple spaces. You can map a domain to multiple spaces, but you can map a route to only one space. |
+| Staging       | The process in <%=vars.product_short%> by which the raw bits of an application are transformed into a droplet that is ready to execute. |
+| UAA           | User Account and Authentication Service, which provides the technological basis for Dashboard Single Sign-On available to Cloud Foundry users when accessing pertinent Managed Services. |
+| Warden        | The mechanism for containerization on DEAs that ensures applications running on <%=vars.product_short%> have a fair share of computing resources and cannot access either the system code or other applications running on the DEA. |
+```
