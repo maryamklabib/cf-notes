@@ -1,4 +1,4 @@
-# Pivotal Cloud Foundry Concepts
+# Pivotal Cloud Foundry Concepts for CS Noobs
 
 # CLI
 
@@ -22,6 +22,7 @@ Ah. Everything is a service in a way so it gets confusing here too. Think of a s
 
 # Service Broker
 A component of a service which implements the service broker API.
+
 
 ```
 Glossary
