@@ -23,6 +23,122 @@ Ah. Everything is a service in a way so it gets confusing here too. Think of a s
 # Service Broker
 A component of a service which implements the service broker API.
 
+# Operators
+Used to denote the person who configures software and monitors it, may or may not be the end user of the product.
+# Client
+The end user of the product. Generally the person who just wants to use software to achieve a goal, without being concerned about how to set it up or how it works.
+# High Availability
+A system or component that is continuously operational for a desirably long length of time. Availability can be measured in percentages, such as "100% operational" or "never failing."
+# Installation
+Refers to an an instance of a software that you have installed in a location.
+# Application Auto-scaling
+A service of Pivotal Cloud Foundry, where you as an operator can specify thresholds, minimums, and maximums. In response to load changes on your app, the service scales your app up and down according to the limits you provided. For example you can say, minimum: 3 instances, maximum: 7 instances, low threshold: 15%, high threshold: 60%
+
+![alt text](https://docs.pivotal.io/pivotalcf/customizing/images/configure/3-view-changes.png "Application Auto-scaling Configuration")
+
+See [Application Auto-scaling Configuration](https://docs.pivotal.io/pivotalcf/customizing/autoscale-configuration.html) for more info
+# Platform as a Service
+Pivotal Cloud Foundry is a PaaS. It provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure. In this case, you bring your own IaaS, we handle the rest. 
+[Wikipedia on Paas](https://en.wikipedia.org/wiki/Platform_as_a_service)
+# Logging
+# Provision
+# Application Performance Monitoring
+# Application Security Groups
+# Infrastructure
+# Cloud-native
+# Pivotal SSO Service
+Self-service platform
+continuous integration
+Continuous Delivery
+Reseller
+target
+cloud independence
+frameworks
+high capacity
+uptime
+real-time ingest
+scale-out storage
+Proxy
+Cloud Foundry Foundation
+developers
+Cloud (quote by paul maritz)
+Data
+Runtime
+managed services
+user provided services/plans
+blue-green deployments
+environment variables
+VCAP
+service instance
+Middleware
+OS
+virtualization
+servers
+storage
+networking
+aws
+vSphere
+Open Stack
+Space
+User
+Role
+Staging
+12 factor apps
+Cloud Computing
+open source
+agility
+IaaS
+Partner
+Organization
+Space
+REST API
+Deploying an app
+Roles
+Permissions
+Application Instance
+Middleware
+Cluster
+Components
+HA Proxy
+PCF vs CF
+Ops Manager
+PWS
+BOSH
+Pivotal Elastic Runtime
+Application
+Loggregator
+Cloud Controller API
+Service Brokers
+Buildpacks
+Microservices
+Services
+cf CLI
+Apps Manager
+browser
+containers
+Ant, Maven, Gradle
+Application Logs
+Application Events
+Droplets
+Cells/DEAs
+VMs
+Application Manifests
+YAML format
+basic cf commands
+app name
+app host
+app domain
+app instances
+app memory
+app path
+app route
+app timeouts
+domains
+routes
+subdomains
+load balancer (HA Proxy)
+dns
+router
 
 ```
 Glossary
