@@ -41,10 +41,15 @@ See [Application Auto-scaling Configuration](https://docs.pivotal.io/pivotalcf/c
 Pivotal Cloud Foundry is a PaaS. It provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure. In this case, you bring your own IaaS, we handle the rest. 
 [Wikipedia on Paas](https://en.wikipedia.org/wiki/Platform_as_a_service)
 # Logging
+Logging can mean a few different things in the context of Cloud Foundry. Most generally, you are really hearing about [Loggregator] (https://docs.cloudfoundry.org/loggregator/architecture.html), which is the system for aggregating and streaming logs and metrics from all of the user apps and system components in a Cloud Foundry deployment.
 # Provision
+A common term in software, generally meaning the automation of steps required to manage user or system access to electronically published services. Basically programmatically setting up software.
 # Application Performance Monitoring
+Data visualization, metrics, graphs, charts. This also used to be the name of a team that did these very things.
 # Application Security Groups
+Application security groups (ASGs) act as virtual firewalls to control outbound traffic from the applications in your deployment. See [Application security groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html).
 # Infrastructure
+A very loose term referring to hardware. Usually when someone has infrastructure, they have a bunch of servers (computing power) and disks (storage). Beyond that, there's lots of automation of things and building on top of that.
 # Cloud-native
 # Pivotal SSO Service
 Self-service platform
