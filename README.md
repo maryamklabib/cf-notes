@@ -1,57 +1,57 @@
 # Pivotal Cloud Foundry Concepts for CS Noobs
 
-# CLI
+## CLI
 
 The PCF CLI is the Command Line Interface. Behind every CLI is an API. While an API simply serves standard requests or returns error codes, a CLI can be an additional layer of support for the end user. Some of the things a CLI can help with include catching error cases if wrong or missing arguments are passed in, offering help by listing endpoints you can invoke, or offering suggested calls you may have intended to make if you made a typo. If you are typing y/n to any questions, you are talking to a CLI. If you are receiving error codes such as a 400, you are talking to the API. Getting to know the cf CLI is well worth your time.
 
-# Orgs Spaces Users Roles
+## Orgs Spaces Users Roles
 
 In order to use the CF CLI, you need to login as a user. Every user is given a set of roles, such that the CLI can know if the user has a right to make the calls it is making. Additionally, many commands have to do with managing apps. Apps are organized in, you guessed it, orgs. And orgs are linked to one or more spaces. Some cf CLI commands take in an org name and a space name (such as the —— command, that shows you the users in a given org and space). These commands only execute if the invoker is a user with priveleges to that org and space. This is also useful because if you want Hakeem to manage one app and Thiri to manage another, you can add them both to your org but link each to the relevant space. 
 
-# Manifest
+## Manifest
 
 You will see Manifests a lot in your time here. There are BOSH manifests, Ops Manager Manifests (though maybe not anymore!), App Manifests….PIVOTAL LOVES YAML. When you hear manifest, make sure you know which manifest is being talked about. They all generally serve the same purpose. They are YAML files with certain fields defined to preconfigure whatever service they belong to. In the case of an Application Manifest, it requires the field X to do Y. In a BOSH Manifest, it needs jobs to know which network to assign to them.
 
-# Domains and Routes
+## Domains and Routes
 
 Domains and routes can get confusing sometimes, so be sure to understand this part thoroughly. A command you will find yourself using a lot is `cf apps` and `cf routes`. This will tell you each app you have, the domain it has (unique), and the route that maps to it (can be shared). Domains are pretty much the name of the app. The end user might never know it. The route is what they type into the browser. They have no idea if there is load balancing or if there are multiple app instances serving that route. ???
 
-# Services
+## Services
 
 Ah. Everything is a service in a way so it gets confusing here too. Think of a service as any third party software that you can link your app instance to and use. Someone else wrote it (usually) and you just link to it from the marketplace. That’s all you need to care about.
 
-# Service Broker
+## Service Broker
 A component of a service which implements the service broker API.
 
-# Operators
+## Operators
 Used to denote the person who configures software and monitors it, may or may not be the end user of the product.
-# Client
+## Client
 The end user of the product. Generally the person who just wants to use software to achieve a goal, without being concerned about how to set it up or how it works.
-# High Availability
+## High Availability
 A system or component that is continuously operational for a desirably long length of time. Availability can be measured in percentages, such as "100% operational" or "never failing."
-# Installation
+## Installation
 Refers to an an instance of a software that you have installed in a location.
-# Application Auto-scaling
+## Application Auto-scaling
 A service of Pivotal Cloud Foundry, where you as an operator can specify thresholds, minimums, and maximums. In response to load changes on your app, the service scales your app up and down according to the limits you provided. For example you can say, minimum: 3 instances, maximum: 7 instances, low threshold: 15%, high threshold: 60%
 
 ![alt text](https://docs.pivotal.io/pivotalcf/customizing/images/configure/3-view-changes.png "Application Auto-scaling Configuration")
 
 See [Application Auto-scaling Configuration](https://docs.pivotal.io/pivotalcf/customizing/autoscale-configuration.html) for more info
-# Platform as a Service
+## Platform as a Service
 Pivotal Cloud Foundry is a PaaS. It provides a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure. In this case, you bring your own IaaS, we handle the rest. 
 [Wikipedia on Paas](https://en.wikipedia.org/wiki/Platform_as_a_service)
-# Logging
+## Logging
 Logging can mean a few different things in the context of Cloud Foundry. Most generally, you are really hearing about [Loggregator] (https://docs.cloudfoundry.org/loggregator/architecture.html), which is the system for aggregating and streaming logs and metrics from all of the user apps and system components in a Cloud Foundry deployment.
-# Provision
+## Provision
 A common term in software, generally meaning the automation of steps required to manage user or system access to electronically published services. Basically programmatically setting up software.
-# Application Performance Monitoring
+## Application Performance Monitoring
 Data visualization, metrics, graphs, charts. This also used to be the name of a team that did these very things.
-# Application Security Groups
+## Application Security Groups
 Application security groups (ASGs) act as virtual firewalls to control outbound traffic from the applications in your deployment. See [Application security groups](https://docs.cloudfoundry.org/adminguide/app-sec-groups.html).
-# Infrastructure
+## Infrastructure
 A very loose term referring to hardware. Usually when someone has infrastructure, they have a bunch of servers (computing power) and disks (storage). Beyond that, there's lots of automation of things and building on top of that.
-# Cloud-native
-# Pivotal SSO Service
+## Cloud-native
+## Pivotal SSO Service
 Self-service platform
 continuous integration
 Continuous Delivery
@@ -144,6 +144,11 @@ subdomains
 load balancer (HA Proxy)
 dns
 router
+## BOSH
+### BOSH release
+A bosh release is essentially the software you want bosh to run. You write a release for every single job you could possibly want to run. Every release has a ``spec`` file that describes the job you want to run and where to find the code it needs (such as if you want to reference releases) as well as other dependencies. 
+It also has a `monit` file that manages the processes that will run as part of this job.
+Lastly it has a `Templates` folder that contains .erb files. Rails requires template files to have the extension of the output type, followed by .erb, so that a name like layout.html.erb indicates a HTML template. Generally these are used for the UI rendering of the overall product.
 
 ```
 Glossary
