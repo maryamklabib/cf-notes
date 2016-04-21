@@ -51,10 +51,17 @@ Application security groups (ASGs) act as virtual firewalls to control outbound 
 ## Infrastructure
 A very loose term referring to hardware. Usually when someone has infrastructure, they have a bunch of servers (computing power) and disks (storage). Beyond that, there's lots of automation of things and building on top of that.
 ## Cloud-native
+This is a bit of a tricky one. The gist of it is that 'cloud-native' software implies a mentality around building software. One that recognizes that you need a a broad set of components that work together, generally open source and not tied down to one company, as that guarantees constant improvement and lastingness. Ultimately we're talking about barebones managing linux clusters and running containers.
 ## Pivotal SSO Service
-Self-service platform
-continuous integration
-Continuous Delivery
+Pivotal Single Sign On is a service (product) that you can get and install on your Ops Manager. You then take all your applications running on PCF and bind them to Pivotal SSO so that they can integrate with enterprise identity providers.
+## Self-service platform
+The term 'self-service' generally implies software that allows people to secure answers to their inquiries and/or needs through an automated interview fashion instead of traditional search approaches. Pivotal Cloud Foundry provides just that with tools like the CF CLI and REST API. With just a `--help` you can learn how to bind a service or scale an app.
+## Continuous Integration
+CI means that you deploy little changes and deploy them often such that the code of the various developers is integrating into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. Pivotal Cloud Foundry also promotes this with the Concourse product, which is a wonderful CI tool.
+
+## Continuous Delivery
+Similar to Continuous Integration, but now instead of just deploying your code often, you're also shipping it to customers often. This goal state is generally harder to achieve but has the wonderful advantage of making upgrades much simpler and less likely to fail because they're little pieces at a time.
+
 Reseller
 target
 cloud independence
