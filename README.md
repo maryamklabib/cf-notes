@@ -71,8 +71,12 @@ Sort of self explanatory but referring to a software that can hook into differen
 ### High Capacity
 Something having high capacity is similar to having high throughput. A lot of things can happen to it at the same time and it can handle them.
 
-uptime
-real-time ingest
+### Uptime
+Generally refers to the time a service is up and working. You want to minimize downtime.
+
+### Real-Time Ingest
+This would be a property of logging systems for instance. It would refer to the property of listening on a stream and being able to process input in real time.
+
 scale-out storage
 Proxy
 Cloud Foundry Foundation
