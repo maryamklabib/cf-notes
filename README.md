@@ -77,7 +77,11 @@ Generally refers to the time a service is up and working. You want to minimize d
 ### Real-Time Ingest
 This would be a property of logging systems for instance. It would refer to the property of listening on a stream and being able to process input in real time.
 
-scale-out storage
+### Scale-Out Storage
+This one needs a good metaphor. Scale-Out Storage is a concept that opposes Scale-Up Storage. Say you had a crowd rushing out of an auditorium and wanted to pass out flyers to every person. And say you had a person standing in the front handing them out. But this person often fumbled with the flyers and it took him time to take one out. So in the spirit of Scale-Up Storage, you hire someone to hold the flyers and only give him one at a time. But this one person isnt giving them fast enough so you hire more people to organize the flyers.
+
+If you went with Scale-Out storage, you would just higher more flyer folks.
+
 Proxy
 Cloud Foundry Foundation
 developers
