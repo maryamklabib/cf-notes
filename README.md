@@ -82,12 +82,15 @@ This one needs a good metaphor. Scale-Out Storage is a concept that opposes Scal
 
 If you went with Scale-Out storage, you would just higher more flyer folks.
 
-Proxy
-Cloud Foundry Foundation
-developers
-Cloud (quote by paul maritz)
-Data
-Runtime
+### Proxy
+A server that acts as an intermediary for requests from clients seeking resources from other servers. Generally used to simplify and control complexity, add structure and encapsulation to distributed systems and provide anonymity.
+
+### Cloud Foundry Foundation
+The development of Cloud Foundry is controlled by a Foundation. By mid-2014, 33 companies had signed up to the Cloud Foundry Foundation. The source code is under an Apache License 2.0, and contributions are governed by the Cloud Foundry contributors' licenses for individuals and corporations. This is a common pattern in software development, such as Rackspace, NASA with the OpenStack foundation and VMware with the Spring Framework from SpringSource.
+
+### Runtime
+Shortened version for the product Elastic Runtime. This was confusing enough that I felt it warranted an entry.
+
 managed services
 user provided services/plans
 blue-green deployments
