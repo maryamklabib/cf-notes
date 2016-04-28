@@ -91,14 +91,19 @@ The development of Cloud Foundry is controlled by a Foundation. By mid-2014, 33 
 ### Runtime
 Shortened version for the product Elastic Runtime. This was confusing enough that I felt it warranted an entry.
 
-managed services
+### Managed Services
+A [service](https://docs.pivotal.io/pivotalcf/services/) that integrate with Cloud Foundry via APIs, and enables end users to provision reserved resources and credentials on demand.
+P.S. In the outside world, a managed service would be if a company pays to use a certain software (say PCF) and they paid for someone to deploy it and manage it.
+
 user provided services/plans
 blue-green deployments
 environment variables
 VCAP
 service instance
 Middleware
-OS
+### OS
+Short for Operating System
+
 virtualization
 servers
 storage
