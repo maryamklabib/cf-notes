@@ -111,7 +111,9 @@ networking
 ### IaaS
 Stands for Infrastructure as a Service. Pivotal Cloud Foundry supports quite a few (through BOSH/Ops Manager). The Notable ones are AWS, vSphere, OpenStack, Azure, vCloud, and others. PCF is an PaaS, which requires an IaaS and uses it to manage and deploy applications.
 
-Space
+### Space
+CF CLI concept representing portions of an org. Every org has one or more spaces in it that you can deploy apps to.
+
 User
 Role
 Staging
