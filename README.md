@@ -133,7 +133,8 @@ Middleware
 Cluster
 Components
 HA Proxy
-PCF vs CF
+### PCF vs CF
+PCF is CF with whipped cream and cherry on top, i.e. Ops Manager that manages the deployment and upgrade of your product, etc.
 Ops Manager
 PWS
 BOSH
