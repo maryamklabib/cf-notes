@@ -167,13 +167,21 @@ app memory
 app path
 app route
 app timeouts
-domains
 routes
+domains
 subdomains
-load balancer (HA Proxy)
-dns
-router
+### Load Balancer (HA Proxy)
+A load balancer is a device that acts as a reverse proxy and distributes network or application traffic across a number of servers. Load balancers are used to increase capacity (concurrent users) and reliability of applications.
+
+### DNS
+The Domain Name System (DNS) is a hierarchical decentralized naming system for computers, services, or any resource connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities. [Read more here.](https://en.wikipedia.org/wiki/Domain_Name_System)
+
+### Router
+A router is a networking device that forwards data packets between computer networks.  A data packet is typically forwarded from one router to another through the networks that constitute the internetwork until it reaches its destination node.
+
 ## BOSH
+BOSH is a vm manager than ensures vms that fall over get replaced with new ones that continue the job. 
+
 ### BOSH release
 A bosh release is essentially the software you want bosh to run. You write a release for every single job you could possibly want to run. Every release has a ``spec`` file that describes the job you want to run and where to find the code it needs (such as if you want to reference releases) as well as other dependencies. 
 It also has a `monit` file that manages the processes that will run as part of this job.
