@@ -5,7 +5,19 @@
 The PCF CLI is the Command Line Interface. Behind every CLI is an API. While an API simply serves standard requests or returns error codes, a CLI can be an additional layer of support for the end user. Some of the things a CLI can help with include catching error cases if wrong or missing arguments are passed in, offering help by listing endpoints you can invoke, or offering suggested calls you may have intended to make if you made a typo. If you are typing y/n to any questions, you are talking to a CLI. If you are receiving error codes such as a 400, you are talking to the API. Getting to know the cf CLI is well worth your time.
 
 ### Orgs Spaces Users Roles
+[Multi Homing BOSH](#MH)
 
+###Multi Homing BOSH
+This is a networking setup customers may want. In the general case, you have a network on which you deploy your BOSH and other VMs for your jobs. However, some customers want the security of having their BOSH director deployed on a separate network than the rest of the VMs.
+Enter the world of multihoming.
+The BOSH director will now have two interfaces (or NICs) to two networks. 
+Which means it will have two ips.
+One for itself and one for the network on which all its VMs will be deployed.
+Here's a helpful guide written by Brian Cunnie [and others] to show how to multihome bosh on vsphere. 
+ 
+[Command Line Interface](#CLI)
+
+###
 In order to use the CF CLI, you need to login as a user. Every user is given a set of roles, such that the CLI can know if the user has a right to make the calls it is making. Additionally, many commands have to do with managing apps. Apps are organized in, you guessed it, orgs. And orgs are linked to one or more spaces. Some cf CLI commands take in an org name and a space name (such as the —— command, that shows you the users in a given org and space). These commands only execute if the invoker is a user with priveleges to that org and space. This is also useful because if you want Hakeem to manage one app and Thiri to manage another, you can add them both to your org but link each to the relevant space. 
 
 ### Manifest
@@ -211,3 +223,8 @@ Glossary
 | UAA           | User Account and Authentication Service, which provides the technological basis for Dashboard Single Sign-On available to Cloud Foundry users when accessing pertinent Managed Services. |
 | Warden        | The mechanism for containerization on DEAs that ensures applications running on <%=vars.product_short%> have a fair share of computing resources and cannot access either the system code or other applications running on the DEA. |
 ```
+=======
+[Services] (#Services)
+# Services
+Ah. Everything is a service in a way so it gets confusing here too. Think of a service as any third party software that you can link your app instance to and use. Someone else wrote it (usually) and you just link to it from the marketplace. That’s all you need to care about.
+>>>>>>> Multihoming BOSH
