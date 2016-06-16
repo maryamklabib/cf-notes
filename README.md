@@ -130,11 +130,38 @@ Stands for Infrastructure as a Service. Pivotal Cloud Foundry supports quite a f
 ### Space
 CF CLI concept representing portions of an org. Every org has one or more spaces in it that you can deploy apps to.
 
-User
-Role
-Staging
-12 factor apps
-Cloud Computing
+### 12 Factor Apps
+Applications deployed on Cloud Foundry are bound to an opinionated concept of the 12 factor app, which came out of Heroku. 
+```
+I. Codebase
+One codebase tracked in revision control, many deploys
+II. Dependencies
+Explicitly declare and isolate dependencies
+III. Config
+Store config in the environment
+IV. Backing services
+Treat backing services as attached resources
+V. Build, release, run
+Strictly separate build and run stages
+VI. Processes
+Execute the app as one or more stateless processes
+VII. Port binding
+Export services via port binding
+VIII. Concurrency
+Scale out via the process model
+IX. Disposability
+Maximize robustness with fast startup and graceful shutdown
+X. Dev/prod parity
+Keep development, staging, and production as similar as possible
+XI. Logs
+Treat logs as event streams
+XII. Admin processes
+Run admin/management tasks as one-off processes
+```
+
+You can read more here! [12factor.net](http://12factor.net/)
+
+###Cloud Computing
 open source
 agility
 Partner
